@@ -1,0 +1,154 @@
+<!doctype html "utf-8">
+<html>
+<head>
+<title>子页1</title>
+<link rel="stylesheet" type="text/css" href="css/ran.css">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script src="Scripts/swfobject_modified.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+</head>
+
+<body>
+<div class="header">
+	<div class="headerinner">
+		<ul class="headernav">
+			<li class="logo">
+				<!---<img src="" alt="" />--->
+			</li>
+			<li><a href="jianjian.html">首页</a></li>
+			<li><a href="jianjian.html" >食材</a></li>
+			<li><a href="jianjian.html">菜谱</a></li>
+			<li><a href="jianjian.html" >健康</a></li>
+			<li><a href="jianjian.html" >珍选</a></li>
+			<li class="search">
+				<a class="search_pic"></a>
+			</li>
+			<li class="list">
+				<a></a>
+			</li>
+		</ul>
+		<!-- 搜索 -->
+		<form action="">
+			<div class="search_main">
+				<button class="search_btn" type="submit"></button>
+				<input class="search_text" type="text" placeholder="搜索">
+				<span class="close_btn"></span>
+			</div>
+		</form>
+		<!-- 会员登录 -->
+		<div class="member">
+			<p>会员中心</p>
+			<ul>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="login.html">登录</a>
+				</li>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="register.html">新会员注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	/*搜索*/
+	$(".search_pic").click(function(){
+		$(".headernav").fadeOut(500);
+		$(".search_main").fadeIn(1000);
+	});
+	$(".search_main .close_btn").click(function(){
+		$(".search_main").fadeOut(500);
+		$(".headernav").fadeIn(1000);
+	});
+	/*登录*/
+	$(".list a").click(function(){
+		$(".member").slideToggle(500);
+	});
+
+});
+</script>
+
+<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+<center>
+<div class="jian">
+	<div class="jian1">
+		<div class="nan"><button class="n1">食谱</button></div>
+		<div class="nan1"><ul>
+			<li><a href="jianjian.html">菜谱首页</a></li>
+			<li><a href="jianjian.html">分类</a></li>
+			<li><a href="jianjian.html">菜单</a></li>
+			<li><a href="jianjian.html">排行</a></li>
+			<li><a href="jianjian.html">食材</a></li>
+			<li><a href="jianjian.html">食疗食补</a></li>
+		</ul></div>
+
+	</div>
+	<br/>
+	<div class="nan2">
+			<div class="n3"><input type="text" class="n2"></div><div class="n4"><form><button class="n">搜索</button></form></div>
+		</div>
+	<div class="kk">
+	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="480" height="220" id="FlashID" title="jian">
+	    <param name="movie" value="flash/9.swf">
+	    <param name="quality" value="high">
+	    <param name="wmode" value="transparent">
+	    <param name="swfversion" value="6.0.65.0">
+	    <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+	    <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+	    <!--[if !IE]>-->
+	    <object type="application/x-shockwave-flash" data="flash/9.swf" width="480" height="220">
+	      <!--<![endif]-->
+	      <param name="quality" value="high">
+	      <param name="wmode" value="transparent">
+	      <param name="swfversion" value="6.0.65.0">
+	      <param name="expressinstall" value="Scripts/expressInstall.swf">
+	      <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+	      <div>
+	        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+	        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+          </div>
+	      <!--[if !IE]>-->
+        </object>
+	    <!--<![endif]-->
+      </object>
+    </div>
+    <div class="zhi">
+		<div class="zhi1"><a href="jianjian.html"><img src="img/kljkl.jpg" title="你行动了吗"></a></div>
+    	<div class=zhi2>
+    	<p>1993年8月8日，注定是对中国糖果行业有着深远影响的一天，某某食品有限公司怀着与生俱来的激情与活力在海峡西岸经济区——福建晋江诞生。经过十年的沉淀，某某在</p>
+    	<p>2003年完成了第一次华丽转身，某某V9的横空出世，为中国开创了维生素糖果的品类。随后，益牙木糖醇在口香糖领域取得巨大成功，打破了外资品牌垄断胶母糖果市场的局</p>
+    	<p>面。某某VQ、浓点、美嚼等众多分品牌也迅速获得市场认可，形成了中国糖果行业第一流的品牌方阵。也为某某赢得了“中国****”、“中国名牌”、“国家免检产品”等代表中</p>
+    	<p>国产品和品牌的至高荣誉。</p>
+    	<p>目前，某某己拥有2座工业园区及3个大型分工厂、２个研发中心、１个跨国实验室、28个分公司，销售网络遍布全国，产品远销五大洲。“甜蜜促进和谐，创新改变生</p><p>活”，作为糖果行业的领军企业，某某一直致力于将甜蜜文化融入人们生活，“健康”、“快乐”、“运动”、“时尚”、“喜庆”......</p></div>
+    </div>
+    <br/>
+    <div class="gao"><div class="ll"><img src="img/5-120601152048.png" class="gg"></div><div class="lg"><img src="img/5-120605203S6-50.gif" class="gc"></div></div>
+</div>
+<div class="tui">
+<br/>
+
+	<p>上海市XX区XX街XX号XX栋</p>
+	
+	<p><img src="img/21_7a8o (1).png">&nbsp;&nbsp;<img src="img/20_m0io.png">&nbsp;&nbsp;<img src="img/19_mv3k.png">&nbsp;&nbsp;<img src="img/1_4rmk.png"></p>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p>Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 某某甜品站</p>
+
+	<p>未经许可 严禁复制   沪ICP备XXXXXX号 </p>
+</div>
+</center>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+
+</body>
+</html>

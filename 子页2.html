@@ -1,0 +1,370 @@
+<!doctype html "utf-8">
+<html>
+<head>
+<title>子页1</title>
+<link rel="stylesheet" type="text/css" href="css/ran.css">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script src="Scripts/swfobject_modified.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<!-- 代码部分begin -->
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-table;}/* Hides from IE-mac \*/
+*html .clearfix{height:1%;}
+.clearfix{display:block;}/* End hide from IE-mac */
+*+html .clearfix{min-height:1%;}
+/* lanrenzhijia */
+.lanrenzhijia{width:980px;overflow:hidden;}
+.lanrenzhijia ul{width:980px;}
+.lanrenzhijia ul li{float:left;display:block;width:220px;height:220px;overflow:hidden;position:relative;
+					margin: 15px 12px;
+					border-radius: 3px;}
+.lanrenzhijia ul li .photo{width:220px;height:220px;overflow:hidden;}
+.lanrenzhijia .rsp{width:220px;height:220px;overflow:hidden;position: absolute;background:#000;top:0px;left:0px;}
+.lanrenzhijia .text{position:absolute;width:220px;height:220px;left:-300px;top:0px;overflow:hidden;}
+.lanrenzhijia .text h3{width:300px;margin-top:100px;height:50px;line-height:50px;text-align:center;color:#FFFFFF;font-size:20px;}
+.lanrenzhijia .text a{text-decoration:none}
+.lanrenzhijia .text div{text-align:center;color:#FFFFFF;font-size:18px;}
+	.lanrenzhijia ul li:hover{border: 2px solid #CDC7C7;
+
+	}
+	
+#biaodan {  
+    height: 300px;  
+    width: 365px;    
+    margin-top: 0px;  
+    margin-right: auto;  
+    margin-bottom: 0px;  
+    margin-left: auto;  
+    font: "微软雅黑" 14px/30px;  
+	float: right;}  
+body {  
+    margin: 0px;  
+    padding: 0px;  
+}  
+#shang{  
+    height: 30;  
+    text-align: center;  
+    border-top:#B18989  1px solid;
+    line-height: 30px;  
+    vertical-align: middle;  
+    background: #FFFFFF;}  
+#xia {  
+    height: 500px;  
+}  
+#junshi ul ,#zhengzhi ul,#wenhua ul{  
+    list-style-type: none;  
+}  
+a:link,a:visited,a:hover{  
+    text-decoration:none;  
+    }     
+#zhengzhi,#wenhua{  
+    display:none;  
+    }  
+#biaodan #sp-junshi{  
+    width: 120px;  
+    height: 29px;   
+    float: left;  
+    border-bottom: none;  
+    background-color:none;  
+}  
+#biaodan #sp-zhengzhi{  
+    width: 120px;  
+    height: 29px;
+    background-color: #cfcfcf;  
+    float: left;  
+}  
+#biaodan #sp-wenhua{  
+    width: 120px;  
+    height: 29px;  
+    background-color: #cfcfcf;  
+    float: left;  
+}  
+body {  
+    margin: 0px;  
+    padding: 0px;  
+}  
+	.lol{width:980px;
+		height: 200px;}
+</style>
+<script>  
+function xianshijunshi(){  
+    //军事显示  
+    document.getElementById("junshi").style.display = "block";  
+    //政治隐藏  
+    document.getElementById("zhengzhi").style.display = "none";  
+    //文化隐藏  
+    document.getElementById("wenhua").style.display = "none";  
+    document.getElementById("sp-junshi").style.background = "none"  
+    document.getElementById("sp-zhengzhi").style.background ="#cfcfcf";  
+    document.getElementById("sp-wenhua").style.background ="#cfcfcf";  
+    document.getElementById("sp-junshi").style.borderBottom = "none";   
+    document.getElementById("sp-zhengzhi").style.borderBottom = "1px solid #666";  
+    document.getElementById("sp-wenhua").style.borderBottom = "1px solid #666";  
+    }  
+function xianshizhengzhi(){  
+    //军事隐藏  
+    document.getElementById("junshi").style.display = "none";  
+    //政治显示  
+    document.getElementById("zhengzhi").style.display = "block";  
+    //文化隐藏  
+    document.getElementById("wenhua").style.display = "none";  
+    document.getElementById("sp-junshi").style.background = "#cfcfcf"  
+    document.getElementById("sp-zhengzhi").style.background ="none";  
+    document.getElementById("sp-wenhua").style.background ="#cfcfcf";  
+    document.getElementById("sp-junshi").style.borderBottom = "1px solid #666";   
+    document.getElementById("sp-zhengzhi").style.borderBottom = "none";  
+    document.getElementById("sp-wenhua").style.borderBottom = "1px solid #666";  
+    }  
+function xianshiwenhua(){  
+    //军事隐藏  
+    document.getElementById("junshi").style.display = "none";  
+    //政治隐藏  
+    document.getElementById("zhengzhi").style.display = "none";  
+    //文化显示  
+    document.getElementById("wenhua").style.display = "block";  
+    document.getElementById("sp-junshi").style.background = "#cfcfcf"  
+    document.getElementById("sp-zhengzhi").style.background ="#cfcfcf";  
+    document.getElementById("sp-wenhua").style.background ="none"  
+    document.getElementById("sp-junshi").style.borderBottom = "1px solid #666";   
+    document.getElementById("sp-zhengzhi").style.borderBottom = "1px solid #666";  
+    document.getElementById("sp-wenhua").style.borderBottom = "none";  
+    }  
+</script>  
+</head>
+
+<body>
+<div class="header">
+	<div class="headerinner">
+		<ul class="headernav">
+			<li class="logo">
+				<!---<img src="" alt="" />--->
+			</li>
+			<li><a href="jianjian.html">首页</a></li>
+			<li><a href="jianjian.html" >食材</a></li>
+			<li><a href="jianjian.html">菜谱</a></li>
+			<li><a href="jianjian.html" >健康</a></li>
+			<li><a href="jianjian.html" >珍选</a></li>
+			<li class="search">
+				<a class="search_pic"></a>
+			</li>
+			<li class="list">
+				<a></a>
+			</li>
+		</ul>
+		<!-- 搜索 -->
+		<form action="">
+			<div class="search_main">
+				<button class="search_btn" type="submit"></button>
+				<input class="search_text" type="text" placeholder="搜索">
+				<span class="close_btn"></span>
+			</div>
+		</form>
+		<!-- 会员登录 -->
+		<div class="member">
+			<p>会员中心</p>
+			<ul>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="login.html">登录</a>
+				</li>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="register.html">新会员注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	/*搜索*/
+	$(".search_pic").click(function(){
+		$(".headernav").fadeOut(500);
+		$(".search_main").fadeIn(1000);
+	});
+	$(".search_main .close_btn").click(function(){
+		$(".search_main").fadeOut(500);
+		$(".headernav").fadeIn(1000);
+	});
+	/*登录*/
+	$(".list a").click(function(){
+		$(".member").slideToggle(500);
+	});
+
+});
+</script>
+<center>
+<div class="ff">
+<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+<center>
+<div class="jian">
+	<div class="jian1">
+		<div class="nan"><button class="n1">食谱</button></div>
+		<div class="nan1"><ul>
+			<li><a href="jianjian.html">菜谱首页</a></li>
+			<li><a href="jianjian.html">分类</a></li>
+			<li><a href="jianjian.html">菜单</a></li>
+			<li><a href="jianjian.html">排行</a></li>
+			<li><a href="jianjian.html">食材</a></li>
+			<li><a href="jianjian.html">食疗食补</a></li>
+		</ul></div>
+
+	</div>
+	<br/>
+	<div class="nan2">
+			<div class="n3"><input type="text" class="n2"></div><div class="n4"><form><button class="n">搜索</button></form></div>
+		</div>
+		<ceter>
+	<div class="kk">
+	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="250" height="270" id="FlashID" title="lllll">
+	    <param name="movie" value="flash/19.swf">
+	    <param name="quality" value="high">
+	    <param name="wmode" value="transparent">
+	    <param name="swfversion" value="6.0.65.0">
+	    <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+	    <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+	    <!--[if !IE]>-->
+	    <object type="application/x-shockwave-flash" data="flash/19.swf" width="250" height="270">
+	      <!--<![endif]-->
+	      <param name="quality" value="high">
+	      <param name="wmode" value="transparent">
+	      <param name="swfversion" value="6.0.65.0">
+	      <param name="expressinstall" value="Scripts/expressInstall.swf">
+	      <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+	      <div>
+	        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+	        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+          </div>
+	      <!--[if !IE]>-->
+        </object>
+	    <!--<![endif]-->
+      </object>
+    </div>
+    </ceter>
+    <div class="lanrenzhijia">
+	<ul class="clearfix">
+		<li>
+			<div class="photo"><img src= "img/TB1C60XaljTBKNjSZFNXXasFXXa_!!0-item_pic.jpg_b.jpg" width="220" height="220" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>黄桃干</h3><div>POST TIME :2014.02.21</div>></a></div>
+		</li>
+		<li>
+			<div class="photo"><img src="img/TB1CsCbb9CWBuNjy0FhXXb6EVXa_!!0-item_pic.jpg_b.jpg" width="220" height="220" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>猪肉铺</h3><div>POST TIME :2014.02.21</div></a></div>
+		</li>
+		<li>
+			<div class="photo"><img src="img/TB1FdRzabZnBKNjSZFrXXaRLFXa_!!0-item_pic.jpg_b.jpg" width="220" height="220" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>精味草莓</h3><div>POST TIME :2014.02.21</div></a></div>
+		</li>
+		<li>
+			<div class="photo"><img src="img/TB1x3NIaXooBKNjSZFPXXXa2XXa_!!0-item_pic.jpg_b.jpg" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>美滋美味</h3><div>POST TIME :2014.02.21</div></a></div>
+		</li>		
+	</ul>
+	<div class="clear"></div>
+</div>
+<div class="lol">
+<div class="nn"><div class="l1"><img src="img/5-120605203S6-50.gif" class="pic1"></div></div>
+<div class="nn1"><div class="l1"><img src="img/5-120605203S6-50.gif" class="pic1"></div></div>
+<div class="nn2"><div class="l1"><img src="img/5-120605203S6-50.gif" class="pic1"></div></div>
+<div id="biaodan">  
+  <div id="shang" >  
+    <div id="sp-junshi" class="s1" onMouseover="xianshijunshi()">站内热门</div>  
+    <div id="sp-zhengzhi" class="s2" onMouseover="xianshizhengzhi()">健身美食</div>  
+    <div id="sp-wenhua" class="s3" onMouseover="xianshiwenhua()">更多</div>  
+    <div style="clear:both;"></div>  
+  </div>  
+  <div id="xia">  
+    <div id="junshi" class ="info">  
+      <ul>  
+        <p> 
+ 16345 ￥19.80
+有点干硬，吃起来有点费劲，味道还不错，咸甜适中，挺香的。生气时可以吃两片发泄一
+</p>
+     <p> 
+ 9931 ￥58.00
+巧克力方正，表面光滑，断裂，无气泡。杏仁香脆，巧克力味道浓郁。巧克力方正，表面
+</p>
+      </ul>  
+    </div>  
+    <div id="zhengzhi" class ="info">  
+      <ul>  
+        <p> 
+ 9548 ￥12.80
+不二家棒棒糖20支，125g/袋，源自日本，四种水果口味，原价12.8元/袋，促销价9.9元/
+</p>
+     <p> 
+ 10575 ￥16.50
+喜欢吃的就是菠萝蜜干。很香甜，很脆，感觉价格合适，一大包很值。
+</p>
+      </ul>  
+    </div>  
+    <div id="wenhua" class ="info">  
+      <ul>  
+        <p> 
+ 12736 ￥39.50
+盒装包装，看起来跟精致。富含8种口味，口味丰富，独特。口感入口即化，香滑醇浓，
+</p> 
+     <p> 
+ 12736 ￥39.50
+盒装包装，看起来跟精致。富含8种口味，口味丰富，独特。口感入口即化，香滑醇浓，
+</p> 
+      </ul>  
+    </div>  
+  </div>  
+</div> 
+</div>
+ 
+</div>
+	<div class="ban"><img src="img/jjjjj.jpg"></div>
+	</center>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".lanrenzhijia ul li .rsp").hide();	
+	$(".lanrenzhijia ul li").hover(function(){
+		$(this).find(".rsp").stop().fadeTo(500,0.5)
+		$(this).find(".text").stop().animate({left:'0'}, {duration: 500})
+	},
+	function(){
+		$(this).find(".rsp").stop().fadeTo(500,0)
+		$(this).find(".text").stop().animate({left:'300'}, {duration: "fast"})
+		$(this).find(".text").animate({left:'-300'}, {duration: 0})
+	});
+});
+</script>
+<!-- 代码部分end -->
+<div class="tui">
+<br/>
+
+	
+	<p><img src="img/21_7a8o (1).png">&nbsp;&nbsp;<img src="img/20_m0io.png">&nbsp;&nbsp;<img src="img/19_mv3k.png">&nbsp;&nbsp;<img src="img/1_4rmk.png"></p>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p>Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 某某甜品站</p>
+
+	<p>未经许可 严禁复制   沪ICP备XXXXXX号 </p>
+</div>
+	
+</center>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+swfobject.registerObject("FlashID");
+</script>
+
+</body>
+</html>

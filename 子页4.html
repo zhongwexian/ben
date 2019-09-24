@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="headerinner">
+		<ul class="headernav">
+			<li class="logo">
+				<!---<img src="" alt="" />--->
+			</li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#" >投资咨询</a></li>
+			<li><a href="#">培训课程</a></li>
+			<li><a href="#" >在线体验</a></li>
+			<li><a href="#" >about</a></li>
+			<li class="search">
+				<a class="search_pic"></a>
+			</li>
+			<li class="list">
+				<a></a>
+			</li>
+		</ul>
+		<!-- 搜索 -->
+		<form action="">
+			<div class="search_main">
+				<button class="search_btn" type="submit"></button>
+				<input class="search_text" type="text" placeholder="搜索">
+				<span class="close_btn"></span>
+			</div>
+		</form>
+		<!-- 会员登录 -->
+		<div class="member">
+			<p>会员中心</p>
+			<ul>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="login.html">登录</a>
+				</li>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="register.html">新会员注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	/*搜索*/
+	$(".search_pic").click(function(){
+		$(".headernav").fadeOut(500);
+		$(".search_main").fadeIn(1000);
+	});
+	$(".search_main .close_btn").click(function(){
+		$(".search_main").fadeOut(500);
+		$(".headernav").fadeIn(1000);
+	});
+	/*登录*/
+	$(".list a").click(function(){
+		$(".member").slideToggle(500);
+	});
+
+});
+</script>
+
+<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<center>
+<div class="jian">
+	<div class="jian1">
+		<div class="nan"><button class="n1">食谱</button></div>
+		<div class="nan1"><ul>
+			<li><a href="jianjian.html">菜谱首页</a></li>
+			<li><a href="jianjian.html">分类</a></li>
+			<li><a href="jianjian.html">菜单</a></li>
+			<li><a href="jianjian.html">排行</a></li>
+			<li><a href="jianjian.html">食材</a></li>
+			<li><a href="jianjian.html">食疗食补</a></li>
+		</ul></div>
+
+	</div>
+	<div class="head">
+		<ul>
+			<li><a href="子页2.html">全部</a><ul>
+			<li><a href="子页2.html">女性</a></li>
+			<li><a href="子页2.html">孕前哺乳</a></li>
+			<li><a href="子页2.html">气血双补</a></li>
+			<li><a href="子页2.html">美容美味</a></li>
+			</ul>
+			</li>
+			<li><a href="子页2.html">美容保健</a></li>
+			<li><a href="子页2.html">美容减肥</a></li>
+			<li><a href="子页2.html">男性</a></li>
+			<li><a href="子页2.html">女性</a></li>
+			<li><a href="子页2.html">孕前哺乳</a></li>
+			<li><a href="子页2.html">气血双补</a></li>
+			<li><a href="子页2.html">美容美味</a></li>
+		</ul>
+	</div>
+	<div class="cc"><img src="img/9903_1.jpg"</div>
+	<div class="c1"><img src="img/qwe.png"></div>
+	<div class="hhh"><a><p>气血双补吃什么食物，气血双补食谱助您气血双补的治疗</p></a></div>
+	<div class="zz">
+	<div class="zz1">
+		<p>中医认为，气的主要作用是温煦人体，血的作用是溽养人体。气血在人体是互相滋生和相互</p>
+		<p>依赖的，所谓“气为血之帅，血为气之母”，即气可以生血，推动血液的运行，防止血液流</p>
+		<p>到血管的外面去。血可以作为气的载体运行全身，并给气以充分的营养。但生病的时候，气</p>
+		<p>血又可以互相影响。临床上经常出现气血两亏的情况，引起血虚的病因有脾胃虚弱、饮食不</p>
+		<p>足、失血过多、肾气亏虚、劳作过度等。</p>
+	</div>
+	</div>
+	<div class="zz2"><div class="en"><img src="img/vdxxvf.jpg"><a href="子页3.html"><a href="注册页.html"><p>红豆芋艿牛奶炖</p></a></div><div class="en"><img src="img/fdbd.jpg"><a href="子页3.html"><p>红糖</p></a></div><div class="en"><img src="img/ffdfdfdfdf.jpg"><a href="子页3.html"><p>红枣养颜千层糕</p></a></div><div class="en"><img src="img/llkfh.jpg"><a href="子页3.html"><p>阿胶</p></a></div><div class="en"><img src="img/hhhhh.jpg"><a href="子页3.html"><p>羊肉</p></a></div></div>
+</div>
+</center>
+<p>© 2004-2018 美食天下 保留所有权利 - 京ICP证090244号</p>
+</div>
+
+</body>
+</html>
